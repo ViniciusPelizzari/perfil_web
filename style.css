@@ -45,7 +45,7 @@ h2#imagem_logo {
 }
 
 #imagem_logo img:hover {
-    border: 3px solid darkblue;
+    border: 3px solid #000000
 }
 
 nav a{
@@ -77,10 +77,6 @@ nav a:hover{
 }
 
 /*PRODUTOS*/
-.main_certificados{
-    background:linear-gradient(#087CF1, #000000);
-}
-
 .produtos{
     width: 100%;
     margin: 0 auto;
@@ -103,48 +99,6 @@ nav a:hover{
     color: #FFFFFF;
 }
 
-/*.produtos li:hover{
-    border-color: #707070;
-    color: #707070;
-}
-
-.produtos li:active{
-    border-color: darkblue;
-    color: darkblue;
-}
-
-.produtos li:hover h2{
-    font-size: 35px;
-    border-color:  #707070;
-    color:  #707070;
-}
-
-.produtos li:active h2{
-    font-size: 35px;
-    border-color:  darkblue;
-    color:  darkblue;
-}
-
-.produtos li:hover .descricao_produto{
-    font-size: 23px;
-    color:  #707070;
-}
-
-.produtos li:active .descricao_produto{
-    font-size: 23px;
-    color:  darkblue;
-}
-
-.produtos li:hover .preco_produto{
-    font-size: 27px;
-    color:  #707070;
-}
-
-.produtos li:active .preco_produto{
-    font-size: 27px;
-    color:  darkblue;
-}*/
-
 .produtos h2{
     font-size: 30px;
     font-weight: bold;
@@ -160,6 +114,41 @@ nav a:hover{
     font-size: 22px;
     font-weight: bold;
     margin: 10px 0 0; /*mesma coisa que margin-top: 10px;*/
+}
+
+/*CERTIFICADOS*/
+.main_certificados{
+    background:linear-gradient(#087CF1, #000000);
+}
+
+.certificados{
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0; /*espaçamento interno*/
+}
+
+.certificados li{
+    display: inline-block;
+    text-align: center;
+    width: 31%;
+    vertical-align: top;
+    /*background: #CCCCCC;*/
+    margin: 20px 0 0 20px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 5px solid #000000; /*mesma coisa que declarar: border-style: solid; border-width: 2px; border-color: #000000;*/
+    border-radius: 10px;
+    height: 250px;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.certificados h2{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
 }
 
 .titulo_sep_certificados{
@@ -180,17 +169,55 @@ nav a:hover{
     font-size: 28px;
 }
 
+.descricao_certificados{
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+
+.escola_certificados{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 0; /*mesma coisa que margin-top: 10px;*/
+}
+
+.imagem_certificado{
+    margin: 15px;
+    width: 150px;
+    height: 100px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.imagem_certificado:hover{
+    cursor: pointer;
+    width: 165px;
+    height: 115px;
+    border: 2px solid #FFFFFF;
+}
+
+.imagem_certificado.ampliada{
+    position: fixed;
+    width: auto;
+    height: 100%;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 300px solid #000000f8;
+}  
+
 .botao_certificado{
     align-items: center;
-    margin-top: 10px;
+    margin-top: 20px;
     border: 2px solid #000000;
     background:linear-gradient(#087CF1, #000000);
     border-radius: 10px;
     color: #FFFFFF;
+    font-size: 22px;
 }
 
 .botao_certificado:hover{
-    font-size: 22px;
+    font-size: 26px;
     border-radius: 15px;
 }
 
@@ -215,17 +242,10 @@ footer{
 }
 
 /*CORPO PÁGINA CONTATOS*/
-
-#body_contatos {
-    background: #0479f6;
-    margin: 0;
-    padding: 0;
-}
-
-
-.main_contatos{
-    width: 940px;
-	margin: 0 auto;
+.main_contatos {
+    position: relative;
+    background: linear-gradient(#087CF1, #000000);
+    width: 100%;
 }
 
 form{
@@ -233,7 +253,7 @@ form{
 }
 
 form label, form p, form legend{
-    display: block;
+    display: inline-block;
     font-size: 22px;
     font-weight: bold;
     margin: 0 0 10px;
