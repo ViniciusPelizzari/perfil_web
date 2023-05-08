@@ -6,14 +6,14 @@
         <title>Contatos - Vinícius Pelizzari</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="icon.ico">
+        <link rel="icon" href="img/icon.ico">
     </head>
-    <body>
+    <body id="body_contatos">
         <header>
 			<div class="caixa_link">
                 <div class="elementos_cabecalho">
                 <h2 id="imagem_logo">
-                    <img src="perfil.png" alt="Foto perfil">
+                    <img src="img/perfil.png" alt="Foto perfil">
                 </h2>
                 </div>
                 <div class="elementos_cabecalho">
@@ -35,133 +35,65 @@
         
         <main class="main_contatos">
             <form>
-                <label for="nome_completo">Nome completo:</label>
-                <input type="text" id="nome_completo" class="input_padrao" required placeholder="Nome Completo"> <!--requerid = obrigatório-->
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" class="input_padrao" required placeholder="seuemail@dominio.com">
-
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" class="input_padrao" required placeholder="(xx)x xxxx-xxxx">
-
-                <label for="observacao">Mensagem / Observação:</label>
-                <textarea cols=30" rows="15" id="observacao" class="input_padrao"></textarea>
-
-                <!--
-                <fieldset> ***se for um formulário, usa-de <fieldset> no lugar do <div> se for usado um fieldset, no lugar do <p> é usado o <legend>
-                    <legend>Como prefere o nosso contato?</legend>
-                    <label for="radio_email"><input type="radio" name="forma_contato" value="email" id="radio_email">Email</label> ***se for um campo especifico como: email, telefone, senha, verificar qual a melhor forma de ser usado para o site ficar bom e facilitar o preenchimento, site: http://www.mobileinputtypes.com/
-
-                    <label for="radio_telefone"><input type="radio" name="forma_contato" value="telefone" id="radio_telefone">Telefone</label>
-
-                    <label for="radio_whatsapp"><input type="radio" name="forma_contato" value="whatsapp" id="radio_whatsapp" checked>WhatsApp</label> ***checked = vai ficar está opção marcada caso não houver outra
-
-                    <label for="radio_instagram"><input type="radio" name="forma_contato" value="instagram" id="radio_instagram">Instagram</label>
-
-                    <label><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
-                    
-                    <label><input type="datetime-local"> Dia para agendamento</label>
-                </fieldset>
-                -->
-
-                <fieldset>
-                    <legend>Como prefere o nosso contato?</legend>
-                    <div class="switch-container">
-                      <label for="switch_email" class="switch-label">Email</label>
-                      <label class="toggle-switch">
-                        <input type="radio" id="switch_email" name="forma_contato" value="email">
-                        <span class="toggle-slider"></span>
-                      </label>
-                    </div>
-                    <div class="switch-container">
-                      <label for="switch_telefone" class="switch-label">Telefone</label>
-                      <label class="toggle-switch">
-                        <input type="radio" id="switch_telefone" name="forma_contato" value="telefone">
-                        <span class="toggle-slider"></span>
-                      </label>
-                    </div>
-                    <div class="switch-container">
-                      <label for="switch_whatsapp" class="switch-label">WhatsApp</label>
-                      <label class="toggle-switch">
-                        <input type="radio" id="switch_whatsapp" name="forma_contato" value="whatsapp" checked>
-                        <span class="toggle-slider"></span>
-                      </label>
-                    </div>
-                    <div class="switch-container">
-                      <label for="switch_instagram" class="switch-label">Instagram</label>
-                      <label class="toggle-switch">
-                        <input type="radio" id="switch_instagram" name="forma_contato" value="instagram">
-                        <span class="toggle-slider"></span>
-                      </label>
-                    </div>
-                    <label class="checkbox"><input type="checkbox" required>Gostaria de receber nossas novidades por email?</label>
-                    
-                    <label class="data_hora"><br>Dia para agendamento<br><br>
-                        <input type="datetime-local">
-                    </label>
-                  </fieldset>
-
-                <script>
-                    // Selecionar o botão "Enviar"
-                    let botaoEnviar = document.querySelector(".enviar");
-                
-                    // Adicionar um ouvinte de evento para o clique no botão
-                    botaoEnviar.addEventListener("click", function(event) {
-                        // Impedir o envio do formulário para o servidor
-                        event.preventDefault();
-                
-                        // Recuperar os valores dos campos do formulário
-                        let nome = document.getElementById("nome_completo").value;
-                        let email = document.getElementById("email").value;
-                        let telefone = document.getElementById("telefone").value;
-                        let observacao = document.getElementById("observacao").value;                     
-                    });
-                </script>
-
-                <input type="submit" name="forma_contato" value="Enviar Formulário" class="enviar"> <!--botão de envio-->               
+                <a href="https://www.linkedin.com/in/vpelizzari/" target="_blank">
+                    <button type="button" class="botao_contato botao_icone_linkedin">
+                        <img src="img/linkedin.ico" alt="Ícone LinkedIn" class="botao_icone">
+                        LinkedIn
+                    </button>
+                </a>
+                <a href="https://github.com/ViniciusPelizzari" target="_blank">
+                    <button type="button" class="botao_contato botao_icone_github">
+                        <img src="img/github.ico" alt="Ícone GitHub" class="botao_icone">
+                        GitHub
+                    </button>
+                </a>
+                <a href="https://discord.com/channels/@me/1031649002757824533" target="_blank">
+                    <button type="button" class="botao_contato botao_icone_discord">
+                        <img src="img/discord.ico" alt="Ícone Discord" class="botao_icone">
+                        Discord
+                    </button>
+                </a>
+                <a href="https://www.instagram.com/v_pelizzari/" target="_blank">
+                    <button type="button" class="botao_contato botao_icone_instagram">
+                        <img src="img/instagram.ico" alt="Ícone Instagram" class="botao_icone">
+                        Instagram
+                    </button>
+                </a>
+                <a href="https://wa.link/k9klkt" target="_blank">
+                    <button type="button" class="botao_contato botao_icone_whatsapp">
+                        <img src="img/whatsapp.ico" alt="Ícone WhatsApp" class="botao_icone">
+                        WhatsApp
+                    </button>
+                </a>
+                <a href="mailto:vinipelizzari2410@gmail.com" target="_blank">
+                    <button type="button" class="botao_contato botao_icone_gmail">
+                        <img src="img/gmail.ico" alt="Ícone Gmail" class="botao_icone">
+                        Email
+                    </button>
+                </a>
+                <a href="https://www.duolingo.com/profile/Vinicius_P_Silva" target="_blank">
+                    <button type="button" class="botao_contato botao_icone_duolingo">
+                        <img src="img/duolingo.ico" alt="Ícone Duolingo" class="botao_icone">
+                        Duolingo
+                    </button>
+                </a>
+                <a href="https://cursos.alura.com.br/user/viniciuspelizzari" target="_blank">
+                    <button type="button" class="botao_contato botao_icone_alura">
+                        <img src="img/alura.ico" alt="Ícone Alura" class="botao_icone">
+                        Alura
+                    </button>
+                </a>
+                <a href="https://www.magazinevoce.com.br/magazinepelizzari/" target="_blank">
+                    <button type="button" class="botao_contato botao_icone_loja">
+                        <img src="img/comprar.ico" alt="Ícone ompras" class="botao_icone">
+                        Minha loja
+                    </button>
+                </a>
             </form>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="2">Horário de funcionamento</th>
-                    </tr>
-                    <tr>
-                        <th>Dia</th>
-                        <th>Horário</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Segunda-Feira</td>
-                        <td>08:00 / 19:00</td>
-                    </tr>
-                    <tr>
-                        <td>Terça-Feira</td>
-                        <td>08:00 / 19:00</td>
-                    </tr>
-                    <tr>
-                        <td>Quarta-Feira</td>
-                        <td>08:00 / 19:00</td>
-                    </tr>
-                    <tr>
-                        <td>Quinta-Feira</td>
-                        <td>08:00 / 19:00</td>
-                    </tr>
-                    <tr>
-                        <td>Sexta-Feira</td>
-                        <td>08:00 / 19:00</td>
-                    </tr>
-                    <tr>
-                        <td>Sábado</td>
-                        <td>09:00 / 17:00</td>
-                    </tr>
-                </tbody>
-            </table>
         </main>
 
         <footer>
-			<img src="logo.png" alt="Logo - Página perfil">
+			<img src="img/logo.png" alt="Logo - Página perfil">
 			<p class="copyright">&copy; Copyright VPS Desenvolvimento - Since 2023</p>
             <p class="gloria">&#8224; Glória a Deus!</p>
 		</footer>

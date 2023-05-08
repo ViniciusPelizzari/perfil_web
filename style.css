@@ -204,31 +204,20 @@ nav a:hover{
     left: 50%;
     transform: translate(-50%, -50%);
     border: 300px solid #000000f8;
-}  
-
-.botao_certificado{
-    align-items: center;
-    margin-top: 20px;
-    border: 2px solid #000000;
-    background:linear-gradient(#087CF1, #000000);
-    border-radius: 10px;
-    color: #FFFFFF;
-    font-size: 22px;
-}
-
-.botao_certificado:hover{
-    font-size: 26px;
-    border-radius: 15px;
 }
 
 /*RODAPÉ*/
-
 footer{
     text-align: center;
     background: #000000;
     /*background: url("fundo.jpg");*/
     padding: 33px;
     color: #FFFFFF;
+}
+
+footer img{
+    width: 100px;
+    height: auto;
 }
 
 .copyrigth{
@@ -243,13 +232,15 @@ footer{
 
 /*CORPO PÁGINA CONTATOS*/
 .main_contatos {
-    position: relative;
     background: linear-gradient(#087CF1, #000000);
-    width: 100%;
+    margin-bottom: 0;
 }
 
-form{
-    margin: 40px 0;
+form {
+    width: 940px;
+    height: 360px;
+    margin: 0 auto;
+    padding-top: 50px;
 }
 
 form label, form p, form legend{
@@ -259,73 +250,145 @@ form label, form p, form legend{
     margin: 0 0 10px;
 }
 
-.input_padrao{
-    display: block;
-    margin: 0 0 20px;
-    padding: 15px 20px;
-    border: 2px solid #000000;
-    border-radius: 10px;
-    width: 50%;
-}
-
-.opcao_dia, .opcao_hora {
+.botao_contato {
     display: inline-block;
-    width: 40%;
-}
-
-.opcao_hora {
-    margin-left: 10%;
-}
-
-.enviar{
-    width: 30%;
-    padding: 15px 0;
-    background-image: url('bg.jpg');
+    padding: 10px;
     background-color: transparent;
-    color: #FFFFFF;
-    border-radius: 10px;
     border: 2px solid #000000;
-    font-size: 22px;
+    border-radius: 10px;
+    color: #fff;
     font-weight: bold;
-    margin-top: 30px;
     text-align: center;
-    cursor: pointer; /*muda da fleca para a mão, a hora que o mouse está encima*/
-    transition: 0.5s all; /*controla a alteração definida (background) conforme o tempo definido em segundos(1s)*/
-}
-
-.enviar:hover{
-    border: 2px solid #000000;
-    font-size: 33px;
-    width: 35%;
-    color: #FFFFFF;
-    /*transform: rotate(360deg) scale(1.2); /*transform = transformar, scale = escala - transforma o tamanho - rotate = muda a rotação do objeto*/
-}
-
-.enviar:active{
-    font-size: 33px;
-    background: darkblue;
-    color: #000000;
-}
-
-table{
-    margin: 20px 0 40px;
+    text-decoration: none;
+    cursor: pointer;
     font-size: 18px;
-    font-weight: bold;
-    border-collapse: collapse;
-    border-radius: 10px;
-    overflow: hidden;
+    margin: 10px;
+    width: 290px;
+    height: 50px;
+    color: #000000;
+    text-align: center;
+}
+  
+.botao_icone {
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 26px;
+    height: 26px;
+    border-radius: 4px;
+    align-self: flex-start;
 }
 
-thead{
-    background-image: url('bg.jpg');
-    background-color: transparent;
-    color: #FFFFFF;
+.botao_icone_linkedin {
+    background: linear-gradient(#215989, #083152);
+  }
+  
+  .botao_icone_github {
+    background: linear-gradient(#6e6e6e, #3b3b3b);
+  }
+  
+  .botao_icone_discord {
+    background: linear-gradient(#394f6e, #172030);
+  }
+  
+  .botao_icone_instagram {
+    background: linear-gradient(#614986, #3b2a4a);
+  }
+  
+  .botao_icone_whatsapp {
+    background: linear-gradient(#075b74, #03394d);
+  }
+  
+  .botao_icone_gmail {
+    background: linear-gradient(#2b7bb9, #0f3553);
+  }
+  
+  .botao_icone_duolingo {
+    background: linear-gradient(#2b852b, #154815);
+  }
+  
+  .botao_icone_alura {
+    background: linear-gradient(#265277, #102b4c);
+  }
+  
+  .botao_icone_loja {
+    background: linear-gradient(#084876, #031c2b);
+  }
+  
+ /*.botao_icone_linkedin {
+    background: linear-gradient(#064a80, #096ead);
+  }
+  
+  .botao_icone_github {
+    background: linear-gradient(#121212, #353535);
+  }
+  
+  .botao_icone_discord {
+    background: linear-gradient(#193e68, #28577d);
+  }
+  
+  .botao_icone_instagram {
+    background: linear-gradient(#4324a7, #5f3bb2);
+  }
+  
+  .botao_icone_whatsapp {
+    background: linear-gradient(#075e54, #128c7e);
+  }
+  
+  .botao_icone_gmail {
+    background: linear-gradient(#b23535, #e63939);
+  }
+  
+  .botao_icone_duolingo {
+    background: linear-gradient(#2a7423, #449c3d);
+  }
+  
+  .botao_icone_alura {
+    background: linear-gradient(#051e38, #072d5b);
+  }
+  
+  .botao_icone_loja {
+    background: linear-gradient(#00348c, #0654bf);
+  }
+  */
+
+  /*.botao_icone_linkedin {
+    background: linear-gradient(#004c7a, #006699);
 }
 
-td, th{
-    border: 1px solid #000000;
-    padding: 15px;
+.botao_icone_github {
+    background: linear-gradient(#1e1e1e, #333333);
 }
+
+.botao_icone_discord {
+    background: linear-gradient(#214667, #305c7f);
+}
+
+.botao_icone_instagram {
+    background: linear-gradient(#633fa0, #7d5fb4);
+}
+
+.botao_icone_whatsapp {
+    background: linear-gradient(#0a6b5b, #13866f);
+}
+
+.botao_icone_gmail {
+    background: linear-gradient(#b22c2c, #d93737);
+}
+
+.botao_icone_duolingo {
+    background: linear-gradient(#266925, #3fa945);
+}
+
+.botao_icone_alura {
+    background: linear-gradient(#071328, #0f1f4a);
+}
+
+.botao_icone_loja {
+    background: linear-gradient(#001b4f, #0648a6);
+}*/
+
+
+
 
 /*Página inicial*/
 .imagemP{
