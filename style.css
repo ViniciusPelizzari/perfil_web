@@ -122,7 +122,7 @@ nav a:hover{
 }
 
 .certificados{
-    width: 100%;
+    width: 940px;
     margin: 0 auto;
     padding: 50px 0; /*espaçamento interno*/
 }
@@ -130,7 +130,7 @@ nav a:hover{
 .certificados li{
     display: inline-block;
     text-align: center;
-    width: 31%;
+    width: 430px;
     vertical-align: top;
     /*background: #CCCCCC;*/
     margin: 20px 0 0 20px;
@@ -138,14 +138,14 @@ nav a:hover{
     box-sizing: border-box;
     border: 5px solid #000000; /*mesma coisa que declarar: border-style: solid; border-width: 2px; border-color: #000000;*/
     border-radius: 10px;
-    height: 250px;
+    height: 270px;
     background-color: transparent;
     color: #FFFFFF;
     font-weight: bold;
 }
 
 .certificados h2{
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     margin: 0 0 10px 0;
     text-transform: uppercase;
@@ -155,7 +155,7 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 20px; /*cima baixo direito esquerdo*/
+    margin: 30px 0 10px; /*cima baixo direito esquerdo*/
     font-size: 25px;
     color: #FFFFFF;
     font-weight: bold;
@@ -175,23 +175,23 @@ nav a:hover{
 }
 
 .escola_certificados{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     margin: 10px 0 0; /*mesma coisa que margin-top: 10px;*/
 }
 
 .imagem_certificado{
     margin: 15px;
-    width: 150px;
-    height: 100px;
+    width: 170px;
+    height: 120px;
     border: 2px solid #000000;
     border-radius: 5px;
 }
 
 .imagem_certificado:hover{
     cursor: pointer;
-    width: 165px;
-    height: 115px;
+    width: 185px;
+    height: 135px;
     border: 2px solid #FFFFFF;
 }
 
