@@ -387,6 +387,55 @@ form label, form p, form legend{
     background: linear-gradient(#001b4f, #0648a6);
 }*/
 
+/*EXPERIÊNCIAS*/
+.apresentacao_experiencia{
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.apresentacao_experiencia div{
+    padding-bottom: 30px;
+}
+
+.titulo_experiencia{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left; 
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.apresentacao_experiencia p{
+    margin: 0 0 1em;
+}
+
+.apresentacao_experiencia strong{
+    font-weight: bold;
+}
+
+.apresentacao_experiencia em{
+    font-style: italic;
+}
+
+.mapa_empresa{
+    float: left; 
+    margin: 0 20px 20px 0;
+    border: 2px solid #000000;
+}
+
+.data_emprego{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.nome_empresa{
+    font-size: 15px;
+    font-weight: bold;
+}
 
 
 
