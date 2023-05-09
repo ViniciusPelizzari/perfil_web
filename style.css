@@ -45,7 +45,8 @@ h2#imagem_logo {
 }
 
 #imagem_logo img:hover {
-    border: 3px solid #000000
+    border: 3px solid #000000;
+    cursor: none;
 }
 
 nav a{
@@ -77,13 +78,13 @@ nav a:hover{
 }
 
 /*PRODUTOS*/
-.produtos{
-    width: 100%;
+.lista_projetos{
+    width: 940px;
     margin: 0 auto;
     padding: 50px 0; /*espaçamento interno*/
 }
 
-.produtos li{
+.lista_projetos li{
     display: inline-block;
     text-align: center;
     width: 31%;
@@ -99,21 +100,109 @@ nav a:hover{
     color: #FFFFFF;
 }
 
-.produtos h2{
+.lista_projetos h2{
     font-size: 30px;
     font-weight: bold;
     margin: 0 0 10px 0;
 }
 
-.descricao_produto{
+.img_projeto{
+
+}
+
+.nome_projeto{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0; /*mesma coisa que margin-top: 10px;*/
+}
+
+.descricao_projeto{
     font-size: 18px;
     margin: 10px 0 0;
 }
 
-.preco_produto{
-    font-size: 22px;
+/*COMPETENCIAS*/
+
+
+  
+.main_compet{
+    background:linear-gradient(#087CF1, #000000);
+}
+.lista_compet{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0; /*espaçamento interno*/
+}
+
+.lista_compet li{
+    display: inline-block;
+    text-align: center;
+    width: 280px;
+    vertical-align: top;
+    margin: 20px 0 0 20px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 5px solid #000000; /*mesma coisa que declarar: border-style: solid; border-width: 2px; border-color: #000000;*/
+    border-radius: 10px;
+    height: 500px;
+    background:linear-gradient(#FEFEFE, #b9d1e1,  #087CF1);
+}
+
+.lista_compet li:hover{
+    width: 300px;
+    height: 520px;
+    border-color: #FFFFFF;
+    cursor: crosshair;
+}
+
+.lista_compet h2{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    color: #000000;
+    text-transform: uppercase;
+    padding-left: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border: 10px solid #f0f3f6;
+    border-bottom-color: #000000;
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+}
+  
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}  
+
+.img_compet{
+    padding-top: 15px;
+}
+
+.nome_compet{
+    font-size: 26px;
     font-weight: bold;
     margin: 10px 0 0; /*mesma coisa que margin-top: 10px;*/
+    color: #000000;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #FFFFFF;
+}
+
+.descricao_compet{
+    font-size: 18px;
+    margin: 10px 0 0;
+    color: #000000;
 }
 
 /*CERTIFICADOS*/
