@@ -43,9 +43,7 @@
 
 		<main class="principal">
 			<section class="apresentacao">
-				<h2 class="titulo_principal">Sobre a Barbearia Alura</h2><br>
-
-				<img class="ferramentas_trabalho" src="ferramentas.jpg" alt="Ferramentas de barbeiro">
+				<h2 class="titulo_principal">Sobre mim</h2><br>
 			
 				<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
 				
@@ -57,27 +55,40 @@
 			
 			<div class="mapa_conteudo">
 				<section class="mapa">
-					<h3 class="titulo_principal">Nossa localização</h3>
-					<p>Nosso estabelecimento está localizado no coração da cidade</p>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.5954458269766!2d-53.61402612473193!3d-25.485180777526697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f1119d538f3de5%3A0x9b3987fda4580cdb!2sAv.%20Tancredo%20Neves%20-%20Cap.%20Le%C3%B4nidas%20Marques%2C%20PR%2C%2085790-000!5e0!3m2!1spt-BR!2sbr!4v1682693141598!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<h3 class="titulo_principal">Localização</h3>
+					<p>Cidade de residência</p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20080.765970899123!2d-53.61630131934229!3d-25.490214979410144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f111795b70c551%3A0x95dd63deb10215d8!2sCap.%20Le%C3%B4nidas%20Marques%2C%20PR%2C%2085790-000!5e0!3m2!1spt-BR!2sbr!4v1683747963406!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 					<!--utilizando mapa do google-->
 				</section>
 			</div>
 
 			<section class="lista_beneficios">
 				<div class="conteudos_beneficios">
-					<h3 class="titulo_principal">Benefícios</h3>
+					<h3 class="titulo_principal">Formações acadêmicas</h3>
 
 					<!--<ol></ol> Lista ordenada-->
 					<!--<ul></ul> Lista desordenada-->
 					<ul class="beneficios_lista">
-						<li class="item_beneficio">Atendimento aos clientes</li> <!--necessário usar LI para listar os -->
-						<li class="item_beneficio">Ambiente planejado</li> <!--class - a classe pode ser usado no lugar do id-->
-						<li class="item_beneficio">Localização excelente</li>
-						<li class="item_beneficio">Profissionais Especializados</li>
-						<li class="item_beneficio">Atendimento à domicílio</li>
-						<li class="item_beneficio">Preço diferenciado</li>
-					</ul><img class="imagem_beneficios" src="benecifios.jpeg" alt="Foto- Cadeira de barbeiro - Estilo vintage"> <!--para usar o inline-block no display e ficar um elemento ao lado do outro, precisam estar juntos/grudados um ao outro-->
+						<li class="item_beneficio">Ensino médio completo - CECAC</li> <!--necessário usar LI para listar os -->
+						<li class="item_beneficio">Análise e Desenv. de Sistemas - Unopar</li> <!--class - a classe pode ser usado no lugar do id-->
+						<li class="estudando" class="item_beneficio">Matemática - Unopar</li>
+						<li class="item_beneficio">Introdução à programação - EBAC</li>
+						<li class="item_beneficio">Empreendedorismo e inovação - Instituto Coca-Cola</li>
+						<li class="item_beneficio">Processo da Criatividade - Instituto Coca-Cola</li>
+						<li class="item_beneficio hidden">Matemática Financeira - Instituto Coca-Cola</li>
+						<li class="item_beneficio hidden">Noções de Atuária - Instituto Coca-Cola</li>
+						<li class="estudando hidden" class="item_beneficio">Especialista Back-End Java - EBAC</li>
+						<li class="item_beneficio hidden">JavaScript e HTML5 - Parte 1  &&  2 - Alura</li>
+						<li class="item_beneficio hidden">GitHub - Alura</li>
+						<li class="item_beneficio hidden">Aprender a aprender - Alura</li>
+						<li class="item_beneficio hidden">Foco - Alura</li>
+						<li class="item_beneficio hidden">LinkedIn - Alura</li>
+						<li class="item_beneficio hidden">Hábitos - Alura</li>
+						<li class="item_beneficio hidden">CSS3 - Parte 1  &&  2  &&  3  &&  4 - Alura</li>
+					</ul><img class="imagem_beneficios" src="img/estudos.png" alt="Foto- Cadeira de barbeiro - Estilo vintage"> <!--para usar o inline-block no display e ficar um elemento ao lado do outro, precisam estar juntos/grudados um ao outro-->
+
+					<button id="botao-mais" onclick="mostrarItens()">Mais</button>
+					<button id="mostrar-menos" onclick="ocultarItens()" style="display: none;">Mostrar Menos</button>
 
 					<!--<div class="video">
 						<iframe width="100%" height="315" src="https://www.youtube.com/embed/l87x_wNdO7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -93,6 +104,24 @@
 		</footer>
 
 		<script>
+		function mostrarItens() {
+        const itensOcultos = document.querySelectorAll(".hidden");
+        for (let i = 0; i < itensOcultos.length; i++) {
+            itensOcultos[i].classList.remove("hidden");
+        }
+        document.getElementById("mostrar-mais").classList.add("hidden");
+        document.getElementById("mostrar-menos").classList.remove("hidden");
+    }
+
+    function ocultarItens() {
+        const itensVisiveis = document.querySelectorAll(".beneficios_lista > .item_beneficio:not(.hidden)");
+        for (let i = 0; i < itensVisiveis.length; i++) {
+            itensVisiveis[i].classList.add("hidden");
+        }
+        document.getElementById("mostrar-mais").classList.remove("hidden");
+        document.getElementById("mostrar-menos").classList.add("hidden");
+    }
+
 			window.addEventListener('load', function() {
                 setInterval(function() {
                     console.log('Recarregando página...');

@@ -686,15 +686,16 @@ form label, form p, form legend{
 }
 
 .conteudos_beneficios{
-    width: 640px;
+    width: 940px;
     margin: auto;
 }
 
 .beneficios_lista{
-    width: 40%;
+    width: 50%;
     display: inline-block;
     vertical-align: top;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .item_beneficio{
@@ -702,8 +703,17 @@ form label, form p, form legend{
     padding: 10px;
 }
 
-.item_beneficio:before{ /*pode ser colocado qualquer coisa que ficará antes do elemento, como é um elemento visual, não pode ser selecionado, pois está na estilização*/
-    content: "✦ ";
+.item_beneficio:before {
+    content: "✔ - ";
+}
+
+.estudando {
+    line-height: 1; /*espaçamento entre as linhas*/
+    padding: 10px;
+}
+
+.estudando:before {
+    content: "⌛ - ";
 }
 
 .item_beneficio:after{ /*pode ser colocado qualquer coisa que ficará depois do elemento, como é um elemento visual, não pode ser selecionado, pois está na estilização*/
@@ -719,11 +729,15 @@ form label, form p, form legend{
 }
 
 .imagem_beneficios{
-    width: 60%;
+    width: 50%;
     /*opacity: 0.8;*/ /*opacidade, deixa um elemento opaco conforme a quantia escolhida. É interessante usar com transsition com hover, conforme passa o mouse sobre, ele aparece... é possível usar também em cores e fazer sombra*/
     box-shadow: 10px 10px 5px 3px #000000; /*para fazer sombra = box-shadow: X (eixo) Y (eixo) BLUR (grau de espalhamento/indo ao transparente) QB (quantidade da borda/o quanto ela irá se espalhar) e a cor; É POSSÍVEL COLOCAR MAIS QUE UMA SOMBRA USANDO A ','. EX: box-shadow: 10px 10px 5px 3px #000000, box-shadow: -10px -10px -5px -3px #FFFFFF; */
     /*box-shadow: inset 0 0 10px #585858;*/ /*adicionar sombra interna, X(eixo) Y (eixo) eixos iniciais (eixos iniciais não são deslocáveis, sempre são 0) e o tamanho da sombra e a cor*/
 }   
+
+.hidden {
+    display: none;
+}
 
 .video{
     width: 560px;
