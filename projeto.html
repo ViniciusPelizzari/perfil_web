@@ -35,16 +35,73 @@
 
         <main class="main_projetos">
             <ul class="lista_projetos">
-                <div>
-                    <li>
-                        <h2>Cabelo</h2>
-                        <img class="img_projeto" src="cabelo.jpg">
-                        <p class="nome_projeto">R$ 25,00</p>
-                        <p class="descricao_projeto">Na tesoura ou máquina, como o cliente preferir</p>
-                    </li>
-                </div>
+                <li>
+                    <h2>Meu perfil</h2>
+                    <img class="img_projeto" src="cabelo.jpg">
+                    <p class="descricao_projeto">Perfil pessoal - Vinícius P. S.</p>
+                    <a href="https://vinicius-ps.vercel.app/index.html" target="_blank">
+                        <button type="button" class="botao_projeto">Projeto</button>
+                    </a>
+                </li>  
+                <li>
+                    <h2>Página Barbearia Alura</h2>
+                    <img class="img_projeto" src="cabelo.jpg">
+                    <p class="descricao_projeto">Site curso CSS3 e HTML5 - Alura</p>
+                    <a href="https://alura-barbearia-seven.vercel.app/index.html" target="_blank">
+                        <button type="button" class="botao_projeto">Projeto</button>
+                    </a>
+                </li> 
+                <li>
+                    <h2>Em execução...</h2>
+                    <div class="sem_img_projeto"><div class="loader_projeto"></div></div>
+                    <!--<img class="img_projeto" src="cabelo.jpg">-->
+                    <p class="descricao_projeto">Este projeto está em fase de criação e decisão...</p>
+                    <!--<a href="certificados/coletivo online - CERTIFICADO.jpg" target="_blank">-->
+                    <button class="botao_projeto_alert">Projeto</button>
+                    <!--</a>-->
+                </li> 
+                <li>
+                    <h2>Em execução...</h2>
+                    <div class="sem_img_projeto"><div class="loader_projeto"></div></div>
+                    <!--<img class="img_projeto" src="cabelo.jpg">-->
+                    <p class="descricao_projeto">Este projeto está em fase de criação e decisão...</p>
+                    <!--<a href="certificados/coletivo online - CERTIFICADO.jpg" target="_blank">-->
+                    <button class="botao_projeto_alert">Projeto</button>
+                    <!--</a>-->
+                </li> 
+                <li>
+                    <h2>Em execução...</h2>
+                    <div class="sem_img_projeto"><div class="loader_projeto"></div></div>
+                    <!--<img class="img_projeto" src="cabelo.jpg">-->
+                    <p class="descricao_projeto">Este projeto está em fase de criação e decisão...</p>
+                    <!--<a href="certificados/coletivo online - CERTIFICADO.jpg" target="_blank">-->
+                    <button class="botao_projeto_alert">Projeto</button>
+                    <!--</a>-->
+                </li> 
+                <li>
+                    <h2>Em execução...</h2>
+                    <div class="sem_img_projeto"><div class="loader_projeto"></div></div>
+                    <!--<img class="img_projeto" src="cabelo.jpg">-->
+                    <p class="descricao_projeto">Este projeto está em fase de criação e decisão...</p>
+                    <!--<a href="certificados/coletivo online - CERTIFICADO.jpg" target="_blank">-->
+                    <button class="botao_projeto_alert">Projeto</button>
+                    <!--</a>-->
+                </li> 
             </ul>
         </main>
+
+        <script>
+            function mensagem_aviso() {
+                alert("Projeto em execução! Aguarde até que seja finalizado...");
+            }
+        
+            var buttons = document.querySelectorAll(".botao_projeto_alert");
+        
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].onclick = mensagem_aviso;
+            }
+        </script>
+        
 
         <footer>
 			<img src="img/logo.png" alt="Logo - Página perfil">
@@ -52,7 +109,7 @@
             <p class="gloria">&#8224; Glória a Deus!</p>
 		</footer>
 
-		<script>
+		<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"> //importando biblioteca html2canvas para captura de imagem da tela
 			window.addEventListener('load', function() {
                 setInterval(function() {
                     console.log('Recarregando página...');

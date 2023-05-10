@@ -77,54 +77,144 @@ nav a:hover{
     text-shadow:  2px 2px #087CF1;
 }
 
-/*PRODUTOS*/
-.lista_projetos{
-    width: 940px;
+/*PROJETOS*/
+.main_projetos {
+    background-color: #087CF1;
+}
+
+.lista_projetos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 940px;
     margin: 0 auto;
-    padding: 50px 0; /*espaçamento interno*/
 }
-
-.lista_projetos li{
+  
+.lista_projetos li {
     display: inline-block;
+    width: 280px;
+    height: 400px;
+    background: linear-gradient(#087CF1, #2c89e5, #5198df, #087CF1, #FFFFFF);
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border: -1px solid #000000;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px #000000;
+}
+  
+.lista_projetos li h2 {
     text-align: center;
-    width: 31%;
-    vertical-align: top;
-    /*background: #CCCCCC;*/
-    margin: 20px 0 0 20px;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    border: 5px solid #FFFFFF; /*mesma coisa que declarar: border-style: solid; border-width: 2px; border-color: #000000;*/
-    border-radius: 10px;
-    height: 200px;
-    background-color: transparent;
-    color: #FFFFFF;
-}
-
-.lista_projetos h2{
-    font-size: 30px;
-    font-weight: bold;
-    margin: 0 0 10px 0;
-}
-
-.img_projeto{
-
-}
-
-.nome_projeto{
-    font-size: 22px;
-    font-weight: bold;
-    margin: 10px 0 0; /*mesma coisa que margin-top: 10px;*/
-}
-
-.descricao_projeto{
     font-size: 18px;
-    margin: 10px 0 0;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
+  
+.lista_projetos li .img_projeto {
+    width: 260px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px #000000;
+    background: #FFFFFF;
+    margin: 10px;
+}
+
+.lista_projetos li .img_projeto:hover {
+    border: 2px solid #000000;
+}
+
+.lista_projetos li .sem_img_projeto {
+    width: 260px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px #000000;
+    background: #FFFFFF;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.lista_projetos li .sem_img_projeto:hover {
+    border: 2px solid #000000;
+}
+
+.loader_projeto{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 5px solid #087CF1;
+    border-bottom-color: #000000;
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+}
+  
+.lista_projetos li .descricao_projeto {
+    font-size: 16px;
+    color: #000000;
+    margin-top: 5px;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.lista_projetos li .botao_projeto {
+    display: inline-block;
+    background:linear-gradient(#087CF1, #000000);
+    border: 2px solid #000000;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    margin: 30px 40px 5px 40px;
+    text-align: center;
+}
+  
+ .lista_projetos li .botao_projeto:hover {
+    background:linear-gradient(#000000, #087CF1);
+    color: #FFFFFF;
+}  
+
+.lista_projetos li .botao_projeto_alert {
+    display: inline-block;
+    background:linear-gradient(#087CF1, #000000);
+    border: 2px solid #000000;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    margin: 12px 40px 5px 40px;
+    text-align: center;
+}
+  
+ .lista_projetos li .botao_projeto_alert:hover {
+    background:linear-gradient(#000000, #087CF1);
+    color: #FFFFFF;
+}  
 
 /*COMPETENCIAS*/
-
-
-  
 .main_compet{
     background:linear-gradient(#087CF1, #000000);
 }
@@ -167,7 +257,7 @@ nav a:hover{
     align-items: center;
 }
 
-.loader {
+.loader_compet {
     display: inline-block;
     width: 22px;
     height: 22px;
@@ -527,6 +617,11 @@ form label, form p, form legend{
 
 
 /*Página inicial*/
+.principal{
+    /*background:linear-gradient(#087CF1, #000000);*/
+    background: #FFFFFF;
+}
+
 .imagemP{
     width: 100%;
 }
@@ -546,7 +641,6 @@ form label, form p, form legend{
 
 .apresentacao{
     padding: 3em 0;
-    background: #FEFEFE;
     width: 940px;
     margin: 0 auto;
 }
@@ -575,7 +669,6 @@ form label, form p, form legend{
 
 .mapa_conteudo{
     padding: 3em 0;
-	background: linear-gradient(#FEFEFE, #888888);
 }
 
 .mapa{
@@ -590,7 +683,6 @@ form label, form p, form legend{
 
 .lista_beneficios{
     padding: 3em 0;
-    background: linear-gradient(#888888, #585858);
 }
 
 .conteudos_beneficios{
