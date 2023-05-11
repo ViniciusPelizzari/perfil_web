@@ -775,6 +775,39 @@ form label, form p, form legend{
     margin: 20px 0 20px;
 }
 
+.caixa_link {
+    width: auto;
+    margin: 0 auto;
+}
+div ul a{
+    font-size: 14px;
+}
+
+.elementos_cabecalho {
+    display: block;
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+}
+
+#imagem_logo {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    max-width: 160px;
+    max-height: 160px;
+    border-radius: 50%;
+    background-color: transparent;
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav ul {
+    display: block;
+}
+
 .certificados {
     width: auto;
     margin: 0 auto;
@@ -848,7 +881,7 @@ form label, form p, form legend{
 }
 
 .apresentacao_experiencia {
-    padding: 50px 20px;
+    padding: 50px 0;
     background: #FEFEFE;
     width: 100%;
     height: auto;
@@ -857,17 +890,16 @@ form label, form p, form legend{
 
 .titulo_experiencia {
     text-align: center;
-    font-size: 2em;
     font-weight: bold;
     font-size: 16px;
     text-transform: uppercase;
 }
 
 .mapa_empresa {
-    width: 70%;
+    width: calc(100% - 40px);
     height: auto;
     display: block;
-    margin: 20px 20px 20px 20px;
+    margin: 20px;
 }
 
 .data_emprego {
@@ -882,6 +914,10 @@ form label, form p, form legend{
 .apresentacao_experiencia p {
     margin: 20px 20px 20px 20px;
     display: block
+}
+
+.apresentacao_experiencia br {
+    display: none;
 }
 
 .lista_projetos {
@@ -967,9 +1003,40 @@ form {
 /*OK - FIM*/
 
 @media (max-width: 480px) {
-    
-    /*OK - INÍCIO*/
-    
+/*OK - INÍCIO*/
+.caixa_link {
+    width: auto;
+    margin: 0 auto;
+}
+div ul a{
+    font-size: 14px;
+}
+
+.elementos_cabecalho {
+    display: block;
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+}
+
+#imagem_logo {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 50%;
+    background-color: transparent;
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav ul {
+    display: block;
+}
+
 .certificados {
     width: auto;
     margin: 0 auto;
@@ -1028,7 +1095,7 @@ form {
 }
 
 .apresentacao_experiencia {
-    padding: 50px 20px;
+    padding: 50px 0;
     background: #FEFEFE;
     width: 100%;
     height: auto;
@@ -1037,17 +1104,16 @@ form {
 
 .titulo_experiencia {
     text-align: center;
-    font-size: 2em;
     font-weight: bold;
     font-size: 16px;
     text-transform: uppercase;
 }
 
 .mapa_empresa {
-    width: 70%;
+    width: calc(100% - 40px);
     height: auto;
     display: block;
-    margin: 20px 20px 20px 20px;
+    margin: 20px;
 }
 
 .data_emprego {
@@ -1062,6 +1128,10 @@ form {
 .apresentacao_experiencia p {
     margin: 20px 20px 20px 20px;
     display: block
+}
+
+.apresentacao_experiencia br {
+    display: none;
 }
 
 .lista_projetos {
