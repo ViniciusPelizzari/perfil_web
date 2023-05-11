@@ -779,8 +779,15 @@ form label, form p, form legend{
     width: auto;
     margin: 0 auto;
 }
+
+div ul{
+    text-align: center;
+    line-height: 1.3;
+    padding-top: 15px;
+}
+
 div ul a{
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .elementos_cabecalho {
@@ -1009,6 +1016,12 @@ form {
     width: auto;
     margin: 0 auto;
 }
+
+div ul{
+    text-align: center;
+    line-height: 1.3;
+}
+
 div ul a{
     font-size: 14px;
 }
