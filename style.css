@@ -839,13 +839,14 @@ nav ul {
 
 .imagem_certificado.ampliada {
     position: fixed;
-    width: auto;
-    height: 100%;
+    width: 100%;
+    max-width: 100vw; /* Define uma largura máxima de 100% da largura da viewport */
+    max-height: 60vh; /* Define uma altura máxima de 90% da altura da viewport */
     z-index: 1;
     top: 50%;
-    left: 50%;
+    left: 48%;
     transform: translate(-50%, -50%);
-    border: 300px solid #000000f8;
+    border: 340px solid #000000f8;
 }
 
 .lista_compet {
@@ -1059,14 +1060,16 @@ nav ul {
 
 .imagem_certificado.ampliada {
     position: fixed;
-    width: auto;
-    height: 100%;
+    width: 100%;
+    max-width: 100vw; /* Define uma largura máxima de 100% da largura da viewport */
+    max-height: 40vh; /* Define uma altura máxima de 90% da altura da viewport */
     z-index: 1;
     top: 50%;
-    left: 50%;
+    left: 46%;
     transform: translate(-50%, -50%);
-    border: 300px solid #000000f8;
+    border: 340px solid #000000f8;
 }
+
 
 .lista_compet li {
     display: inline-block;
