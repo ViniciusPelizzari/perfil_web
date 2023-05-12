@@ -5,7 +5,7 @@ body{
 
 /*CABEÇALHO*/
 header{
-    background:linear-gradient(#FEFEFE, #087CF1);
+    background:linear-gradient(#000000, #087CF1);
     padding: 20px 0;
 }
 
@@ -79,7 +79,8 @@ nav a:hover{
 
 /*PROJETOS*/
 .main_projetos {
-    background-color: #087CF1;
+    padding-bottom: 50px;
+    background: linear-gradient(#087CF1, #000000);
 }
 
 .lista_projetos {
@@ -95,15 +96,15 @@ nav a:hover{
   
 .lista_projetos li {
     display: inline-block;
-    width: 280px;
+    width: 274px;
     height: 400px;
-    background: linear-gradient(#087CF1, #2c89e5, #5198df, #087CF1, #FFFFFF);
+    background: linear-gradient(#087CF1, #00000078);
     padding: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
-    border: -1px solid #000000;
+    border: 2px solid #000000;
     border-radius: 8px;
-    box-shadow: 2px 2px 2px 2px #000000;
+    /*box-shadow: 2px 2px 2px 2px #000000;*/
 }
   
 .lista_projetos li h2 {
@@ -122,9 +123,9 @@ nav a:hover{
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    box-shadow: 2px 2px 2px 2px #000000;
+    border: 2px solid #000000;
     background: #FFFFFF;
-    margin: 10px;
+    margin: 7px;
 }
 
 .lista_projetos li .img_projeto:hover {
@@ -138,9 +139,9 @@ nav a:hover{
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    box-shadow: 2px 2px 2px 2px #000000;
+    border: 2px solid #000000;
     background: #FFFFFF;
-    margin: 10px;
+    margin: 7px;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
@@ -174,7 +175,7 @@ nav a:hover{
     display: inline-block;
     background:linear-gradient(#087CF1, #000000);
     border: 2px solid #000000;
-    color: #FFFFFF;
+    color: #000000;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
@@ -189,13 +190,13 @@ nav a:hover{
   
  .lista_projetos li .botao_projeto:hover {
     background:linear-gradient(#000000, #087CF1);
-    color: #FFFFFF;
+    color: #000000;
 }  
 
 .lista_projetos li .botao_projeto_alert {
     display: inline-block;
     background:linear-gradient(#087CF1, #000000);
-    border: 2px solid #000000;
+    /*border: 2px solid #000000;*/
     color: #000000;
     text-transform: uppercase;
     font-weight: bold;
@@ -235,7 +236,8 @@ nav a:hover{
     border: 5px solid #000000; /*mesma coisa que declarar: border-style: solid; border-width: 2px; border-color: #000000;*/
     border-radius: 10px;
     height: 500px;
-    background:linear-gradient(#FEFEFE, #b9d1e1,  #087CF1);
+    /*background:linear-gradient(#FEFEFE, #b9d1e1,  #087CF1);*/
+    background:linear-gradient(#087cf1d0, #000000b0);
 }
 
 .lista_compet li:hover{
@@ -929,6 +931,10 @@ nav ul {
     display: none;
 }
 
+.main_projetos {
+    padding-bottom: 100px;
+}
+
 .lista_projetos {
     width: 100%;
     height: auto;
@@ -945,18 +951,24 @@ nav ul {
 }
 
 .lista_projetos li .img_projeto {
-    max-width: 260px;
-    max-height: 240px;
-    width: calc(100% - 40px);
-    height: auto;
-    margin: 20px;
+    width: 260px;
+    height: 240px;
+    width: calc(100% - 10%);
+    margin: 5%;
+}
+
+.lista_projetos li .sem_img_projeto {
+    width: 260px;
+    height: 240px;
+    width: calc(100% - 10%);
+    margin: 5%;
 }
 
 .lista_projetos li .botao_projeto {
     display: inline-block;
     background: linear-gradient(#087CF1, #000000);
     border: 2px solid #000000;
-    color: #FFFFFF;
+    color: #000000;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
@@ -1052,6 +1064,60 @@ nav ul {
     display: block;
 }
 
+.principal{
+    margin: 0;
+}
+
+.titulo_principal {
+    font-size: 24px;
+    margin: 0 0 20px;
+}
+
+.apresentacao{
+    padding: 30px;
+}
+
+.apresentacao br{
+    display: none;
+}
+
+.apresentacao p{
+    font-size: 16px;
+}
+
+iframe{
+    width: calc(100% - 12%);
+    height: auto;
+    padding-left: 6%;
+}
+
+.lista_beneficios {
+    padding: 1em 0;
+}
+
+.beneficios_lista {
+    width: 100%;
+}
+
+#mostrar_mais {
+    text-align: center;
+    margin: auto;
+    font-size: 60px;
+    padding-left: 0;
+}
+
+#mostrar_menos {
+    text-align: center;
+    margin: auto;
+    font-size: 60px;
+    padding-left: 0;
+}
+
+.imagem_beneficios {
+    width: calc(100% - 10%);
+    margin: 5%;
+}
+
 .certificados {
     width: auto;
     margin: 0 auto;
@@ -1132,6 +1198,7 @@ nav ul {
     height: auto;
     display: block;
     margin: 20px;
+    padding: 0;
 }
 
 .data_emprego {
@@ -1168,11 +1235,17 @@ nav ul {
 }
 
 .lista_projetos li .img_projeto {
-    max-width: 260px;
-    max-height: 240px;
-    width: calc(100% - 40px);
-    height: auto;
-    margin: 20px;
+    width: 260px;
+    height: 240px;
+    width: calc(100% - 10%);
+    margin: 5%;
+}
+
+.lista_projetos li .sem_img_projeto {
+    width: 260px;
+    height: 240px;
+    width: calc(100% - 10%);
+    margin: 5%;
 }
 
 .lista_projetos li .botao_projeto {
