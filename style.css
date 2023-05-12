@@ -948,6 +948,15 @@ nav ul {
     padding: 10px;
     margin: 10px 30px 10px 30px;
     width: calc(49% - 80px);
+    color: #000000;
+}
+
+.lista_projetos li h2 {
+    color: #ffffff;
+}
+
+.lista_projetos li .descricao_projeto {
+    color: #ffffff;
 }
 
 .lista_projetos li .img_projeto {
@@ -968,7 +977,7 @@ nav ul {
     display: inline-block;
     background: linear-gradient(#087CF1, #000000);
     border: 2px solid #000000;
-    color: #000000;
+    color: #ffffff;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
@@ -985,7 +994,7 @@ nav ul {
     display: inline-block;
     background: linear-gradient(#087CF1, #000000);
     border: 2px solid #000000;
-    color: #000000;
+    color: #ffffff;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
