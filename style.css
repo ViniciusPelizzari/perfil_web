@@ -190,7 +190,7 @@ nav a:hover{
   
  .lista_projetos li .botao_projeto:hover {
     background:linear-gradient(#000000, #087CF1);
-    color: #000000;
+    color: #FFFFFF;
 }  
 
 .lista_projetos li .botao_projeto_alert {
@@ -1261,7 +1261,7 @@ iframe{
     display: inline-block;
     background: linear-gradient(#087CF1, #000000);
     border: 2px solid #000000;
-    color: #FFFFFF;
+    color: #000000;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
