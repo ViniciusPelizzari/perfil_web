@@ -5,7 +5,8 @@ body{
 
 /*CABEÇALHO*/
 header{
-    background:linear-gradient(#000000, #087CF1);
+    background: #000000;
+    /*background:linear-gradient(#000000, #087CF1);*/
     padding: 20px 0;
 }
 
@@ -39,23 +40,23 @@ h2#imagem_logo {
 
 #imagem_logo img {
     border-radius: 50%;
-    border: 3px solid #FFFFFF;
+    border: 3px solid #087CF1;
     max-width: 100%;
     max-height: 100%;
 }
 
 #imagem_logo img:hover {
-    border: 3px solid #000000;
+    border: 3px solid #FFFFFF;
     cursor: none;
 }
 
 nav a{
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #087CF1;
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
-    text-shadow:  2px 2px 2px #000000;
+    text-shadow:  1px 1px 1px #FFFFFF;
 }
 
 nav ul {
@@ -73,14 +74,14 @@ nav li:last-child {
 }
 
 nav a:hover{
-    color: #000000;
+    color: #FFFFFF;
     text-shadow:  2px 2px #087CF1;
 }
 
 /*PROJETOS*/
 .main_projetos {
     padding-bottom: 50px;
-    background: linear-gradient(#087CF1, #000000);
+    background: #000000
 }
 
 .lista_projetos {
@@ -97,12 +98,12 @@ nav a:hover{
 .lista_projetos li {
     display: inline-block;
     width: 274px;
-    height: 400px;
-    background: linear-gradient(#087CF1, #00000078);
+    height: 415px;
+    background: #000000
     padding: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
-    border: 2px solid #000000;
+    border: 2px solid #087CF1;
     border-radius: 8px;
     /*box-shadow: 2px 2px 2px 2px #000000;*/
 }
@@ -111,9 +112,10 @@ nav a:hover{
     text-align: center;
     font-size: 18px;
     font-weight: bold;
-    color: #000000;
+    color: #087CF1;
     text-transform: uppercase;
     margin-bottom: 10px;
+    margin-top: 15px;
 }
   
 .lista_projetos li .img_projeto {
@@ -123,13 +125,13 @@ nav a:hover{
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    border: 2px solid #000000;
+    border: 2px solid #087CF1;
     background: #FFFFFF;
     margin: 7px;
 }
 
 .lista_projetos li .img_projeto:hover {
-    border: 2px solid #000000;
+    border: 2px solid #087CF1;
 }
 
 .lista_projetos li .sem_img_projeto {
@@ -139,7 +141,7 @@ nav a:hover{
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    border: 2px solid #000000;
+    border: 2px solid #087CF1;
     background: #FFFFFF;
     margin: 7px;
     font-size: 18px;
@@ -148,7 +150,7 @@ nav a:hover{
 }
 
 .lista_projetos li .sem_img_projeto:hover {
-    border: 2px solid #000000;
+    border: 2px solid #087CF1;
 }
 
 .loader_projeto{
@@ -156,14 +158,14 @@ nav a:hover{
     width: 20px;
     height: 20px;
     border: 5px solid #087CF1;
-    border-bottom-color: #000000;
+    border-bottom-color: #FFFFFF;
     border-radius: 50%;
     animation: rotate 1s linear infinite;
 }
   
 .lista_projetos li .descricao_projeto {
     font-size: 16px;
-    color: #000000;
+    color: #087CF1;
     margin-top: 5px;
     font-size: 18px;
     padding: 10px;
@@ -173,8 +175,8 @@ nav a:hover{
 
 .lista_projetos li .botao_projeto {
     display: inline-block;
-    background:linear-gradient(#087CF1, #000000);
-    border: 2px solid #000000;
+    background: #087CF1;
+    border: 2px solid #087CF1;
     color: #000000;
     text-transform: uppercase;
     font-weight: bold;
@@ -189,13 +191,13 @@ nav a:hover{
 }
   
  .lista_projetos li .botao_projeto:hover {
-    background:linear-gradient(#000000, #087CF1);
+    background:linear-gradient(#087CF1, #087CF1);
     color: #FFFFFF;
 }  
 
 .lista_projetos li .botao_projeto_alert {
     display: inline-block;
-    background:linear-gradient(#087CF1, #000000);
+    background: #087CF1;
     /*border: 2px solid #000000;*/
     color: #000000;
     text-transform: uppercase;
@@ -299,7 +301,7 @@ nav a:hover{
 
 /*CERTIFICADOS*/
 .main_certificados{
-    background:linear-gradient(#087CF1, #000000);
+    background: #000000
 }
 
 .certificados{
@@ -317,12 +319,13 @@ nav a:hover{
     margin: 20px 0 0 20px;
     padding: 30px 20px;
     box-sizing: border-box;
-    border: 5px solid #000000; /*mesma coisa que declarar: border-style: solid; border-width: 2px; border-color: #000000;*/
+    border: 5px solid #087CF1; /*mesma coisa que declarar: border-style: solid; border-width: 2px; border-color: #000000;*/
     border-radius: 10px;
     height: 270px;
     background-color: transparent;
     color: #FFFFFF;
     font-weight: bold;
+    text-shadow: 1px 1px 1px #087CF1;
 }
 
 .certificados h2{
@@ -341,12 +344,12 @@ nav a:hover{
     color: #FFFFFF;
     font-weight: bold;
     text-transform: uppercase;
-    text-shadow:  2px 2px 2px #000000;
+    text-shadow:  2px 2px 2px #087CF1;
     color: #FFFFFF;
 }
 
 .titulo_sep_certificados:hover{
-    text-shadow:  2px 2px #000000;
+    text-shadow:  2px 2px #FFFFFF;
     font-size: 28px;
 }
 
@@ -365,7 +368,7 @@ nav a:hover{
     margin: 15px;
     width: 170px;
     height: 120px;
-    border: 2px solid #000000;
+    border: 3px solid #087CF1;
     border-radius: 5px;
 }
 
@@ -384,7 +387,7 @@ nav a:hover{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 300px solid #000000f8;
+    border: 300px solid #087CF1;
 }
 
 /*RODAPÉ*/
@@ -413,7 +416,7 @@ footer img{
 
 /*CORPO PÁGINA CONTATOS*/
 .main_contatos {
-    background: linear-gradient(#087CF1, #000000);
+    background: #000000;
     margin-bottom: 0;
 }
 
@@ -842,7 +845,7 @@ nav ul {
     height: auto;
     max-width: 170px;
     max-height: 120px;
-    border: 2px solid #000000;
+    border: 2px solid #087CF1;
     border-radius: 5px;
 }
 
@@ -871,7 +874,7 @@ nav ul {
     margin: 10px 10px 10px 10px;
     padding: 20px 20px;
     box-sizing: border-box;
-    border: 5px solid #000000;
+    border: 5px solid #087CF1;
     border-radius: 10px;
     width: calc(49% - 20px);
     height: auto;
