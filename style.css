@@ -6,8 +6,12 @@ body{
 /*CABEÇALHO*/
 header{
     background: #000000;
-    /*background:linear-gradient(#000000, #087CF1);*/
+    /*background:linear-gradient(#000000, #087CF1, #FFFFFF);*/
     padding: 20px 0;
+}
+
+.header_compet{
+    background: linear-gradient(#000000, #087CF1);
 }
 
 .caixa_link{
@@ -81,7 +85,7 @@ nav a:hover{
 /*PROJETOS*/
 .main_projetos {
     padding-bottom: 50px;
-    background: #000000
+    background: #000000;
 }
 
 .lista_projetos {
@@ -99,7 +103,7 @@ nav a:hover{
     display: inline-block;
     width: 274px;
     height: 415px;
-    background: #000000
+    background: #000000;
     padding: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
@@ -387,7 +391,7 @@ nav a:hover{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 300px solid #087CF1;
+    border: 300px solid #000000;
 }
 
 /*RODAPÉ*/
@@ -422,7 +426,7 @@ footer img{
 
 form {
     width: 940px;
-    height: 360px;
+    height: 700px;
     margin: 0 auto;
     padding-top: 50px;
 }
@@ -435,29 +439,34 @@ form label, form p, form legend{
 }
 
 .botao_contato {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     padding: 10px;
     background-color: transparent;
     border: 2px solid #000000;
     border-radius: 10px;
-    color: #fff;
+    color: #FFFFFF;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
     font-size: 18px;
     margin: 10px;
-    width: 290px;
-    height: 50px;
-    color: #000000;
-    text-align: center;
+    width: 730px;
+    height: 60px;
+    margin-left: 105px;
+    border: 0.5px solid #FFFFFF;
+}
+
+.botao_contato span {
+    margin-left: 10px;
 }
   
 .botao_icone {
     vertical-align: middle;
-    margin-right: 5px;
-    width: 26px;
-    height: 26px;
+    margin-right: 265px;
+    width: 40px;
+    height: 40px;
     border-radius: 4px;
     align-self: flex-start;
 }
@@ -497,79 +506,6 @@ form label, form p, form legend{
   .botao_icone_loja {
     background: linear-gradient(#084876, #031c2b);
   }
-  
- /*.botao_icone_linkedin {
-    background: linear-gradient(#064a80, #096ead);
-  }
-  
-  .botao_icone_github {
-    background: linear-gradient(#121212, #353535);
-  }
-  
-  .botao_icone_discord {
-    background: linear-gradient(#193e68, #28577d);
-  }
-  
-  .botao_icone_instagram {
-    background: linear-gradient(#4324a7, #5f3bb2);
-  }
-  
-  .botao_icone_whatsapp {
-    background: linear-gradient(#075e54, #128c7e);
-  }
-  
-  .botao_icone_gmail {
-    background: linear-gradient(#b23535, #e63939);
-  }
-  
-  .botao_icone_duolingo {
-    background: linear-gradient(#2a7423, #449c3d);
-  }
-  
-  .botao_icone_alura {
-    background: linear-gradient(#051e38, #072d5b);
-  }
-  
-  .botao_icone_loja {
-    background: linear-gradient(#00348c, #0654bf);
-  }
-  */
-
-  /*.botao_icone_linkedin {
-    background: linear-gradient(#004c7a, #006699);
-}
-
-.botao_icone_github {
-    background: linear-gradient(#1e1e1e, #333333);
-}
-
-.botao_icone_discord {
-    background: linear-gradient(#214667, #305c7f);
-}
-
-.botao_icone_instagram {
-    background: linear-gradient(#633fa0, #7d5fb4);
-}
-
-.botao_icone_whatsapp {
-    background: linear-gradient(#0a6b5b, #13866f);
-}
-
-.botao_icone_gmail {
-    background: linear-gradient(#b22c2c, #d93737);
-}
-
-.botao_icone_duolingo {
-    background: linear-gradient(#266925, #3fa945);
-}
-
-.botao_icone_alura {
-    background: linear-gradient(#071328, #0f1f4a);
-}
-
-.botao_icone_loja {
-    background: linear-gradient(#001b4f, #0648a6);
-}*/
 
 /*EXPERIÊNCIAS*/
 .apresentacao_experiencia{
@@ -618,8 +554,6 @@ form label, form p, form legend{
 .nome_empresa{
     font-size: 15px;
 }
-
-
 
 /*Página inicial*/
 .principal{
@@ -1029,8 +963,9 @@ form {
     font-size: 18px;
     margin: 20px 40px;
     width: calc(100% - 80px);
-    height: 50px;
+    height: 60px;
     color: #000000;
+    border: 0.5px solid #FFFFFF;
     text-align: center;
 }
 /*OK - FIM*/
@@ -1313,9 +1248,13 @@ form {
     font-size: 18px;
     margin: 20px 40px;
     width: calc(100% - 80px);
-    height: 50px;
+    height: 60px;
     color: #000000;
     text-align: center;
+}
+
+.botao_icone {
+    margin-right: 105px;
 }
 
 /*OK - FIM*/
