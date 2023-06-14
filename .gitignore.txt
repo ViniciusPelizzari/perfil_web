@@ -1,0 +1,5 @@
+projeto.html
+img\1escopia-removebg-preview.ico
+img\1escopia-removebg-preview.png
+img\esc-removebg-preview.png
+img\esc-removebg-preview.ico
