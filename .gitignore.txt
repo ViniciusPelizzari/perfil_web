@@ -1,5 +1,5 @@
-projeto.html
-img\1escopia-removebg-preview.ico
-img\1escopia-removebg-preview.png
-img\esc-removebg-preview.png
-img\esc-removebg-preview.ico
+curriculo_web/projeto.html
+curriculo_web/img/1escopia-removebg-preview.ico
+curriculo_web/img/1escopia-removebg-preview.png
+curriculo_web/img/esc-removebg-preview.png
+curriculo_web/img/esc-removebg-preview.ico
