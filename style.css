@@ -394,6 +394,26 @@ nav a:hover{
     border: 300px solid #000000;
 }
 
+.loader_certificados {
+    display: inline-block;
+    margin: 35px;
+    width: 60px;
+    height: 60px;
+    border: 10px solid #087CF1;
+    border-bottom-color: #000000;
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+}
+  
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}  
+
 /*RODAPÉ*/
 footer{
     text-align: center;
@@ -655,11 +675,21 @@ form label, form p, form legend{
 }
 
 .beneficios_lista{
-    width: 50%;
+    width: 60%;
     display: inline-block;
     vertical-align: top;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.titulo{
+    line-height: 1.5; /*espaçamento entre as linhas*/
+    padding: 10px;
+    display: inline-block;
+    color: #000000;
+    text-shadow: 0.5px 0.5px 0.5px #087CF1;
+    font-size: 20px;
+    margin-left: 20%;
 }
 
 .item_beneficio{
@@ -669,18 +699,28 @@ form label, form p, form legend{
     text-shadow: 0.5px 0.5px 0.5px #087CF1;
 }
 
+.link_princ_certific{
+    text-decoration: none;
+    color: #000000;
+}
+
+.link_princ_certific_estud{
+    text-decoration: none;
+    color: #000000;
+}
+
+.link_princ_certific:before {
+    content: "✔ - ";
+}
+
 .instit{
     display: inline-block;
     color: #087CF1;
     text-shadow: 1px 1px 1px #000000;
 }
 
-.item_beneficio:before {
-    content: "✔ - ";
-}
-
 .estudando {
-    line-height: 1; /*espaçamento entre as linhas*/
+    line-height: 1;
     padding: 10px;
 }
 
@@ -701,7 +741,7 @@ form label, form p, form legend{
 }
 
 .imagem_beneficios{
-    width: 50%;
+    width: 40%;
     box-shadow: 10px 10px 5px 3px #000000;
 }   
 
@@ -718,6 +758,7 @@ form label, form p, form legend{
     border: 10px;
     padding-left: 20%;
     text-shadow: 4px 4px 2px #087CF1;
+    cursor: pointer;
 }
 
 #mostrar_menos{
@@ -729,6 +770,7 @@ form label, form p, form legend{
     border: 10px;
     padding-left: 20%;
     text-shadow: 4px 4px 2px #087CF1;
+    cursor: pointer;
 } 
 
 
