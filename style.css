@@ -282,7 +282,24 @@ nav a:hover{
     to {
         transform: rotate(360deg);
     }
-}  
+} 
+
+.progress {
+    width: 120px;
+    height: 18px;
+    -webkit-mask: linear-gradient(90deg, #474bff 70%, #0000 0) left/20% 100%;
+    background: linear-gradient(#000000 0 0) left/0% 100% no-repeat #dbdcef;
+    animation: progress-422c3u 2s infinite steps(6);
+    background-color: #FFFFFF;
+    margin: 0 auto;
+}
+
+ 
+ @keyframes progress-422c3u {
+    100% {
+       background-size: 120% 100%;
+    }
+ }
 
 .img_compet{
     padding-top: 15px;
